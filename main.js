@@ -144,20 +144,20 @@ class User {
 
   render() {
     return `
-	<div class="card">
-		<div class="about">
-			<img src="./images/users/${this.img}.png" alt="users photo">
-			<div>
-				<p>Name: <span>${this.name}</span></p>
-				<p>Age: <span>${this.age}</span></p>
+		<div class="card">
+			<div class="about">
+				<img src="./images/users/${this.img}.png" alt="users photo">
+				<div>
+					<p>Name: <span>${this.name}</span></p>
+					<p>Age: <span>${this.age}</span></p>
+				</div>
+			</div>	
+			<div class="role">
+				<img src="./images/roles/${this.role}.png" alt="role logo">
+				<p>${this.role}</p>
 			</div>
-		</div>	
-		<div class="role">
-			<img src="./images/roles/${this.role}.png" alt="role logo">
-			<p>${this.role}</p>
-		</div>
-		${this._renderCourses()}	
-	</div>`;
+			${this._renderCourses()}	
+		</div>`;
   }
 }
 
